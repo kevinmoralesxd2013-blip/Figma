@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIGMA - Roblox UI Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">FIGMA<span>.</span></div>
+    <div class="project-name">Untitled Project</div>
+    <div class="top-actions">
+      <button id="undo">↶</button>
+      <button id="redo">↷</button>
+      <button id="export">Exportar</button>
+    </div>
+  </header>
+
+  <main class="editor">
+
+    <aside class="sidebar left">
+      <h3>ELEMENTOS</h3>
+      <button class="add" data-type="Frame">＋ Frame</button>
+      <button class="add" data-type="TextLabel">＋ TextLabel</button>
+      <button class="add" data-type="TextButton">＋ TextButton</button>
+      <button class="add" data-type="ImageLabel">＋ ImageLabel</button>
+      <button class="add" data-type="UICorner">＋ UICorner</button>
+      <button class="add" data-type="UIStroke">＋ UIStroke</button>
+
+      <h3>CAPAS</h3>
+      <div id="layers"></div>
+    </aside>
+
+    <section class="workspace">
+      <div class="canvas-header">
+        <span>CANVAS</span>
+        <span id="zoom">100%</span>
+      </div>
+
+      <div class="canvas-area">
+        <div id="canvas">
+          <div class="canvas-placeholder">
+            <span>＋</span>
+            <p>Tu diseño aparecerá aquí</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar right">
+      <h3>PROPIEDADES</h3>
+      <div id="properties">
+        <p class="muted">Selecciona un elemento para editarlo.</p>
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
